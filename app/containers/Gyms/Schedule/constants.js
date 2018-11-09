@@ -1,0 +1,12 @@
+export const GET_API_DATA = 'containers/App/GET_API_DATA';
+export const GET_API_DATA_LOADED = 'containers/App/GET_API_DATA_LOADED';
+export const GET_API_DATA_ERROR = 'containers/App/GET_API_DATA_ERROR';
+export const GET_GYM_DETAIL = 'containers/GymSchedule/GET_GYM_DETAIL';
+export const SET_GYM_DETAIL = 'containers/GymSchedule/SET_GYM_DETAIL';
+export const CHANGE_SCHEDULE = 'containers/GymSchedule/CHANGE_SCHEDULE';
+export const NEW_SCHEDULE = 'containers/GymSchedule/NEW_SCHEDULE';
+export const UPDATE_SCHEDULE = 'containers/GymSchedule/UPDATE_SCHEDULE';
+export const REMOVE_SCHEDULE = 'containers/GymSchedule/REMOVE_SCHEDULE';
+export const SAVE_SCHEDULE = 'containers/GymSchedule/SAVE_SCHEDULE';
+export const GET_SCHEDULE = 'containers/GymSchedule/GET_SCHEDULE';
+export const SET_SCHEDULE = 'containers/GymSchedule/SET_SCHEDULE';

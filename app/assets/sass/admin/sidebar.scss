@@ -1,0 +1,45 @@
+.db-sidebar {
+	position: fixed;
+	background-color: #fff;
+	height: calc(100% - 83px);
+	z-index: 102;
+	@include box-shadow(0 10px 10px rgba(0,0,0,0.13));
+	width: 265px;
+	top: 83px;
+	left: -265px;
+	overflow: auto;
+	@include transition(all 0.25s ease);
+	.aside-open & {
+		left: 0;
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		left: -265px;
+		top: 65px;
+		height: calc(100% - 65px); 
+	}
+}
+.sideNav {
+	ul {
+		
+	}
+	li {
+		border-bottom: #e7e7e7 1px solid;
+		&:first-child {
+			border-top: #e7e7e7 1px solid;
+		}
+	}
+	a {
+		display: block;
+		padding: 22px 35px;
+		font-size: 18px;
+		font-weight: 600;
+		color: #8e9c9d;
+		&:hover {
+			color: #36afba;
+		}
+		&.active {
+			background-color: #caeaee;
+			color: #36afba;
+		}
+	}
+}

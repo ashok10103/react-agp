@@ -1,0 +1,78 @@
+// 01 : COMMON STYLES
+
+
+//Margin classes [m is margin]
+.mb-0 {
+    margin-bottom: 0 !important;  
+}
+.mt-0 {
+    margin-top: 0 !important;  
+}
+.mr-0 {
+    margin-right: 0 !important;  
+}
+.ml-0 {
+    margin-left: 0 !important;  
+}
+
+//Padding classes [p is padding]
+.pb-0 {
+    padding-bottom: 0 !important;  
+}
+.pt-0 {
+    padding-top: 0 !important;  
+}
+.pr-0 {
+    padding-right: 0 !important;  
+}
+.pl-0 {
+    padding-left: 0 !important;  
+}
+
+.text-secondary {
+    color: $brand-secondary;
+}
+.text-additional {
+    color: $brand-additional;
+}
+
+.gradient-primary {
+    @include gradient-vertical(#31a8c2, #59dd84, 0%, 120%);
+}
+.gradient-secondary {
+    @include gradient-vertical(#51cba0, #3fb3bc, 0%, 120%);
+}
+.gradient-gym { 
+    @include gradient-vertical(#31a8c2, #59dd84, -30%, 100%);
+}
+.gradient-member {
+	@include gradient-vertical(#6cbaf5, #5a94df, 0%, 100%);
+} 
+.gradient-trainer {
+	background: $brand-additional !important;
+} 
+
+.pg-members .gradient-primary, 
+.pg-members .gradient-gym {
+    @include gradient-vertical(#6cbaf5, #5a94df, 0%, 100%);
+}
+.pg-trainers .gradient-primary, .pg-trainers .gradient-gym {
+    background: $brand-additional !important;
+}
+
+.bg-additional {
+	background: $brand-additional !important;
+}
+
+.contentarea {
+    padding: 50px 0;
+}
+.btn-container {
+    padding: 20px 0;
+}
+.btn-wdt-150 {
+    min-width: 150px;
+}
+.pointer {
+    cursor: pointer;
+}

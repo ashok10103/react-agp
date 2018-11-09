@@ -1,0 +1,239 @@
+.btn-clearfilter {
+	display: inline-block;
+	border: $brand-secondary 1px solid;
+	@include border-radius($border-radius-base);
+	padding: 6px 12px;
+	text-transform: uppercase;
+	background: none;
+	font-weight: $font-weight-semibold;
+	color: $brand-secondary;
+	@include transition(all 0.25s ease);
+	&:hover, &:active {
+		background-color: $brand-secondary;
+		color: $white;
+	}
+} 
+
+//Gym Locator [for Members]
+$map-container-height: 620px !default;
+.gym-locator-hd {
+	padding: 20px 0;
+	text-transform: uppercase;
+	color: $gray-light;
+	font-weight: $font-weight-semibold;
+	.list-sec {
+		width: 36%;
+		padding-left: 30px;
+	}
+	.map-sec {
+		width: 64%;
+		padding-left: 30px;
+	}
+	.btn-clearfilter {
+		margin: -8px 0;
+	}
+}
+.gym-locator {
+	position: relative;
+	height: $map-container-height;
+	overflow: hidden;
+	border: $gray-lighter 1px solid;
+	.gym-list {
+		position: absolute;
+		top: 0;
+		left: -36%;
+		width: 36%;
+		height: 100%;
+		background-color: $white;
+		@include box-shadow(8px 0 10px rgba(213,213,213,0.41));
+		padding: 8px;
+		overflow: auto;
+		@include transition(all 0.3s ease);
+	}
+	.map-cntr {
+		width: 100%;
+		height: 100%;
+	}
+	&.list-open {
+		.gym-list-trigger {
+			left: 36%;
+			margin-left: -20px;
+			i:before {
+				content: $fa-var-angle-right;
+				font-size: 22px;
+			}
+		}
+		.gym-list {
+			left: 0;
+		}
+	}
+}
+.gym-result-list { 
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 17px 20px;
+		cursor: pointer;
+		@include transition(all 0.25s ease);
+		&:nth-child(even) {
+			background-color: #f9f9f9;
+		}
+		&.active-item {
+			background-color: $brand-secondary;
+			@extend .gradient-gym;
+			* {
+				color: $white;
+			}
+			.star-rating {
+				display: none;
+			}
+		}
+		&:hover {
+			background-color: $gray-lighter;
+		}
+	}
+	.gym-details {
+		font-size: $font-size-medium;
+		.img-wrp {
+			float: left;
+			width: 42px;
+			height: 42px;
+			margin-right: 10px;
+			margin-top: 4px;
+			@include border-radius(50%);
+			overflow: hidden;
+			@extend .gradient-gym;
+			&.short-text {
+				text-align: center;
+				color: #fff;
+				font-size: 20px;
+				font-weight: $font-weight-bold;
+				line-height: 40px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		figcaption {
+			margin-left: 55px;	
+		}
+		p {
+			margin-bottom: 5px;
+		}
+	}
+	.gym-name {
+		font-size: $font-size-large;
+		color: $gray-dark;
+	}
+	.star-rating {
+		margin-left: 8px;
+	}
+	.gym-type {
+		padding-right: 10px;
+	}
+	.gym-distance {
+		padding-left: 10px;
+		border-left: $gray-lighter 1px solid;
+	}
+}
+.gym-filters {
+	background-color: $white;
+	padding: 18px;
+	height: $map-container-height;
+	@include box-shadow(8px 0 10px rgba(213,213,213,0.12));
+	h5 {
+		color: $gray-darker;
+		text-transform: uppercase;
+		position: relative;
+		margin: 0 0 15px 0;
+		font-weight: $font-weight-bold;
+		span {
+			display: inline-block;
+			padding-right: 10px;
+			position: relative;
+			z-index: 2;
+			background-color: $white;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			background-color: #d3d3d3;
+			width: 100%;
+			height: 1px;
+		}
+	}
+	.chk-list {
+		margin-bottom: 25px;
+		li {
+			padding: 7px 0;
+		}
+		
+	}
+	.containercheck {
+		margin: 0;
+		padding-left: 30px;
+		.chcked-sect {
+			&:checked ~ .checkmark {
+				border-color: $brand-secondary;
+				&:after {
+					border-color: $brand-secondary;
+				}
+			}
+		}
+	}
+	.distance-slider {
+		margin-bottom: 25px;
+	}
+}
+.gym-list-trigger {
+	@extend .gradient-gym;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+	@include border-radius(50%);
+	color: $white;
+	font-size: 20px;
+	border: none;
+	padding: 0;
+	text-align: center;
+	@include transition(all 0.3s ease);
+}
+
+//Color theming
+$members-color: $brand-secondary !default;
+.form-members {
+	.form-control:focus {
+		border-color: $members-color;
+	}
+}
+.pg-members {
+	//calendar
+	.react-calendar__navigation__prev-button,
+	.react-calendar__navigation__next-button {
+		color: $members-color !important; 
+		&:before {
+			border-color: $members-color !important; 
+		}
+	}
+	.react-calendar .react-calendar__navigation__label {
+		color: $members-color !important;  
+	}
+}
+.add-card-row {
+	margin: 0;
+	> div {
+		padding-left: 0;
+	}
+}
+.stripe-class {
+	border: #D2D2D2 1px solid;
+	padding: 8px 10px;
+}

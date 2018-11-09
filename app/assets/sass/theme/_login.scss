@@ -1,0 +1,152 @@
+.p-login {
+    width: 100%;
+    height: 100vh;
+    min-height: 320px;
+    background: url(../images/temp/login-bg.jpg) no-repeat center center / cover;
+    position: relative;
+    overflow: auto;
+}
+
+.c-login {
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    .logo-block {
+        margin-bottom: 30px;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    &.user-signup {
+        width: 1098px;
+        max-width: 100%;
+    }
+    @media screen and (min-height: 700px) {
+        @include translate(0,-50%);
+        position: relative;
+        top: 50%;
+    }
+}
+
+.b-login {
+    padding: 50px;
+    background-color: #fff;
+    @include border-radius(6px);
+    .btn-login {
+        min-width: 164px;
+        text-transform: uppercase;
+    }
+    .form-note {
+        font-size: $font-size-medium;
+    }
+    .form-group {
+        position: relative;
+    }
+    .input-icon {
+        position: absolute;
+        width: 45px;
+        left: 1px;
+        top: 7px;
+        border-right: $input-border 1px solid;
+        text-align: center;
+        line-height: 26px;
+        display: block;
+        i {
+            color: #dbdbdb;
+            font-size: 16px;
+        }
+        .fa-lock {
+            font-size: 18px;
+        }
+    }
+    input.form-control {
+        @include border-radius(21px);
+        padding-left: 60px;
+        @include box-shadow(0 6px 9px -3px rgba(173,173,173,0.2));
+    }
+    .forgot-link:not(:hover) {
+        color: #8d8d8d;
+    }
+}
+
+.h-login {
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0 0 30px 0;
+    font-weight: $font-weight-bold;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 72px;
+        margin-left: -36px;
+        height: 1px;
+        background-color: #cbcbcb;
+    }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .c-login {
+        .logo-block img {
+            max-width: 100px;
+        }
+    }
+    .b-login {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .c-login {
+        .logo-block img {
+            max-width: 120px;
+        }
+    }
+    .b-login {
+        padding: 35px;
+    }
+}
+
+.b-usersignup {
+    background-color: #ffffff;
+    padding: 32px;
+    margin-top: 80px;
+    @include border-radius(6px);
+    li {
+        border-right: #dee3e1 1px solid;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    .img-wrp {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .btn-wrp {
+        display: block;
+        margin-bottom: 18px;
+        .btn {
+            display: block;
+            margin: 0 20px;
+        }
+    }
+    .already {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        li {
+            border-right: none;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: #dee3e1 1px solid;
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

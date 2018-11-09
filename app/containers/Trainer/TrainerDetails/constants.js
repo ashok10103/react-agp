@@ -1,0 +1,9 @@
+export const GET_API_DATA = 'containers/App/GET_API_DATA';
+export const GET_API_DATA_LOADED = 'containers/App/GET_API_DATA_LOADED';
+export const GET_API_DATA_ERROR = 'containers/App/GET_API_DATA_ERROR';
+export const GET_TRAINER_DETAIL = 'containers/Trainer/TrainerDetails/GET_TRAINER_DETAIL';
+export const SET_TRAINER_DETAIL = 'containers/Trainer/TrainerDetails/SET_TRAINER_DETAIL';
+export const CHANGE_STAR = 'containers/Trainer/TrainerDetails/CHANGE_STAR';
+export const SEND_STAR = 'containers/Trainer/TrainerDetails/SEND_STAR';
+export const SET_NEW_STAR = 'containers/Trainer/TrainerDetails/SET_NEW_STAR';
+export const ADD_RATING = 'containers/Trainer/TrainerDetails/ADD_RATING';

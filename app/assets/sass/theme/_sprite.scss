@@ -1,0 +1,47 @@
+$sprite-sprite-dimensions: true;
+@import "sprite/*.png";
+@include all-sprite-sprites;   
+$disable-magic-sprite-selectors:true; 
+
+.icon, .icon:after, .icon:before, [class^="sprite-"] { 
+    display: inline-block;
+    margin-right: 5px;  
+} 
+
+//.slick-slider {
+//    .slick-arrow {
+//        &:after {
+//            position: absolute;
+//            content: "";
+//            top: 50%;
+//            left: 50%;
+//            z-index: 2;
+//            margin: -14px 0 0 -8px;
+//        }
+//        &.slick-prev:after {
+//            @include sprite-sprite(slick-prev); 
+//        }
+//        &.slick-next:after {
+//            @include sprite-sprite(slick-next); 
+//        }
+//    }
+//}
+//
+//.my-slick {
+//    .slick-arrow {
+//        &:after {
+//            position: absolute;
+//            content: "";
+//            top: 50%;
+//            left: 50%;
+//            z-index: 2;
+//            margin: -14px 0 0 -8px;
+//        }
+//        &.slick-prev:after {
+//            @include sprite-sprite(slick-prev-left); 
+//        }
+//        &.slick-next:after {
+//            @include sprite-sprite(slick-next-right); 
+//        }
+//    }
+//}

@@ -1,0 +1,66 @@
+$trainer-color: $brand-additional !default;
+
+.pg-trainers {
+	.header-nav .user-dropdown a:hover {
+		color: $trainer-color;
+	}
+	
+	.btn-save:hover {
+		color: $trainer-color;
+	}
+	
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover {
+		color: $trainer-color;
+		border-bottom-color: $trainer-color;
+	}
+	.form-control:focus {
+		border-color: $trainer-color;
+	}
+	.gym-images .upload-img:hover {
+		background-color: $trainer-color;
+	}
+	.gym-prof-tab .chk-list .chcked-sect:checked ~ .checkmark,
+	.gym-filters .containercheck .chcked-sect:checked ~ .checkmark {
+		border-color: $trainer-color;
+		&:after {
+			border-color: $trainer-color;
+		}
+	}
+	.trainer-certificates {
+		li {
+			width: 48%;
+			margin: 8px 2% 8px 0;
+			@media screen and (max-width: $screen-sm-max) {
+				width: 100%;
+				margin: 2px 0 2px 0;
+			}
+		}
+	}
+	.calendar-block .btn-clearfilter,
+	.gym-locator-hd .btn-clearfilter {
+		border-color: $trainer-color;
+		color: $trainer-color;
+		&:hover {
+			background-color: $trainer-color; 
+			color: $white;
+		}
+	}
+	
+	//calendar
+	.react-calendar__navigation__prev-button,
+	.react-calendar__navigation__next-button {
+		color: $trainer-color !important;  
+		&:before {
+			border-color: $trainer-color !important;  
+		}
+	}
+	.react-calendar .react-calendar__navigation__label {
+		color: $trainer-color !important;  
+	}
+}
+.form-trainers {
+	.form-control:focus {
+		border-color: $trainer-color;
+	}
+}

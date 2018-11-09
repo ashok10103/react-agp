@@ -1,0 +1,24 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.img-gallery {
+    @include clearfix();
+    li {
+        float: left;
+        width: 33.33%;
+        padding: 2px;
+        &.full_h {
+            height: 194px;
+        }
+        &.half_h {
+            height: 97px
+        }
+    }
+} 

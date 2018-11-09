@@ -1,0 +1,6 @@
+.btn-primary {
+		@extend .gradient-gym;
+    &:hover {
+        @include gradient-vertical(#31a8c2, #59dd84, -10%, 80%);
+    }
+}

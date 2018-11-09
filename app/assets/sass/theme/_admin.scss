@@ -1,0 +1,101 @@
+.adminlogin {
+    @extend .p-login;
+    background: url(../images/temp/admin-bg.jpg) no-repeat center center / cover;
+    .adminright {
+        position: absolute;
+        right: 0;
+        background: $white;
+        width: 444px;
+        padding: 80px 35px 35px 35px;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        .copyrght {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 12px;
+        }
+    }
+    .c-login {
+        max-width: none;
+        @include translate(0,-50%);
+        position: relative;
+        top: 50%;
+        margin-right: 443px;
+    }
+    .left-content {
+        padding: 0 100px;
+        color: $white;
+        font-size: $font-size-medium;
+        .admin-ttl {
+            color: $white;
+            font-size: 54px;
+            margin-bottom: 30px;
+        }
+        .p-cls {
+            max-width: 440px;
+        }
+    }
+    .logo-sect {
+        width: 110px;
+        height: 110px;
+        margin: auto;
+        margin-bottom: 40px;
+        img {
+            max-width: 100%;
+        }
+    }
+} 
+.form-arealogin {
+    padding: 50px 5px;
+    .form-group {
+        margin-bottom: 40px;
+    }
+    .form-control {
+        border: none;
+        border-bottom: 1px solid $input-border;
+        padding: 10px;
+    }
+} 
+.loginadminbtn {
+    .btn-submit {
+        @include border-radius($border-radius-base);
+        background: $brand-admin-color;
+        width: 222px;
+        color: $white;
+        font-weight: 500;
+    }
+} 
+.mar-70 {
+    margin-top: 70px;
+}
+
+@media screen and (max-width: $screen-sm) { 
+    .adminlogin {
+        .adminright {
+            margin: auto;
+            width: 100%;
+        }
+        .admin-ttl-rght {
+            margin-bottom: 25px;
+            margin-top: 0;
+            font-size: 30px;
+        }
+        .left-content {
+            display: none;
+        }
+    }
+    .form-arealogin {
+        padding: 10px 5px;
+        .loginadminbtn {
+            margin-top: 45px;
+        }
+    }
+}
+@media screen and (min-width: $screen-sm) { 
+    .admin-ttl-rght {
+        display: none;
+    }
+}

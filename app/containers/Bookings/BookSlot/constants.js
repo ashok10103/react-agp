@@ -1,0 +1,11 @@
+export const GET_BOOKINGS = 'containers/Booking/GET_BOOKINGS';
+export const SET_BOOKINGS = 'containers/Booking/SET_BOOKINGS';
+export const ADD_SLOTS = 'containers/Booking/ADD_SLOTS';
+export const BOOK_TRAINER_SLOTS = 'containers/Booking/BOOK_TRAINER_SLOTS';
+export const RESET_BOOKING_DATA = 'containers/Booking/RESET_BOOKING_DATA';
+export const CHECK_FOR_CARD = 'containers/Booking/CHECK_FOR_CARD';
+export const SET_CUSTOMER_ID = 'containers/Booking/SET_CUSTOMER_ID';
+export const ADD_CARD = 'containers/Booking/ADD_CARD';
+export const LIST_ALL_CARDS = 'containers/Booking/LIST_ALL_CARDS';
+export const SET_CARDS = 'containers/Booking/SET_CARDS';
+export const PAY_ONLINE = 'containers/Booking/PAY_ONLINE';

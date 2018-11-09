@@ -1,0 +1,115 @@
+$tab-color : #40b5a3;
+
+.varify-section {
+    text-align: center;
+    padding: 16px 0;
+    .varify-not {
+        width: 47px;
+        height: 47px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 5px;
+        border-radius: 100px;
+        @include box-shadow(0px 0px 4px 2px rgba(0,0,0,0.10));
+        i {
+            margin: 0;
+        }
+    }
+    .varify {
+        @extend .varify-not;
+        padding: 15px 5px;
+    }
+    .vaifyttl {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
+.modal-padding {
+    .modal-body {
+        padding: 0;
+    }
+    .formrow {
+        padding: 22px 50px;
+        border-bottom: 1px solid $input-border;
+    }
+    .accountdetls {
+        color: #9a9a9a;
+        font-weight: $font-weight-normal;
+    }
+    .accountvalues {
+        font-weight: 600;
+    }
+    .hyphen {
+        float: right;
+    }
+}
+.varifybtn {
+    margin: 20px 0;
+    .btn-submit {
+        border: solid 2px $brand-primary;
+        padding: 3px 12px;
+        background: none;
+        @include border-radius($border-radius-base);
+        min-width: 85px;
+        &:hover {
+            background: $brand-primary;
+            color: $white;
+        }
+    }
+} 
+
+.paymentmodal {
+    .modal-body {
+        padding: 0 50px 40px;
+    }
+    @media screen and (min-width: $screen-md-min) {
+        .modal-dialog {
+            width: 830px; 
+        }
+    }
+    .nav-tabs {
+        border: none;
+        text-align: center;
+        li {
+            float: none;
+            display: inline-block;
+            @include border-radius($border-radius-base);
+            margin-left: -7px;
+            .tabttle {
+                border: solid 2px $tab-color;
+                @include border-radius($border-radius-base);
+                padding: 2px 30px;
+                font-size: $font-size-medium;
+                font-weight: 400;
+                color: #9a9a9a;
+                margin: 0;
+                &:after {
+                    display: none;
+                }
+                &:focus {
+                    border-bottom-color: $tab-color;
+                    border-bottom-width: 2px;
+                }
+            }
+            &.active { 
+                background: $tab-color;
+                .tabttle {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .modal-header {
+        padding: 35px 0;
+    }
+    .form-group {
+        .form-control {
+            border: none;
+            border-bottom: 1px solid $input-border;
+        }
+    }
+    .form-tb {
+        margin-top: 20px;
+    }
+}

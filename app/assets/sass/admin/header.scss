@@ -1,0 +1,65 @@
+.db-header {
+	position: fixed;
+	background-color: #fff;
+	height: 83px;
+	z-index: 101;
+	@include box-shadow(0 0 10px rgba(0,0,0,0.13));
+	width: 100%;
+	top: 0;
+	left: 0;
+	&:not(.p-header) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 30px 0 265px; 
+	}
+	.toggle-wrp {
+		width: 265px;
+		border-right: #c8c8c8 1px solid;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		padding: 28px 35px;
+		@include transition(all 0.25s ease);
+	}
+	.btn-toggle {
+		display: inline-block;
+		i {
+			margin-right: 0;
+		}
+	}
+	.hdr-ttl {
+		margin: 0;
+		padding: 0 30px;
+		text-transform: uppercase;
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		padding-left: 75px;
+		height: 65px;
+		.toggle-wrp {
+			width: 75px;
+			padding: 0;
+		}
+		.btn-toggle {
+			padding: 19px 20px;
+			text-align: center;
+		}
+		.hdr-ttl {
+			padding: 0 15px;
+			font-size: 18px;
+		}
+	}
+}
+.right-nav {
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 30px;
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		a {
+			margin-left: 8px;
+		}
+	}
+}

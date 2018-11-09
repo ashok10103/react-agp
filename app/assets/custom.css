@@ -1,0 +1,345 @@
+.ElementsApp {
+  padding: 10px;
+  border: #d2d2d2 1px solid;
+}
+.mapinfo .mapinfo-ttl, .mapinfo .mapinfo-btm {
+  display: flex;
+  justify-content: flex-start;
+}
+.mapinfo .mapinfo-ttl h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 15px 10px 0;
+}
+.mapinfo .mapinfo-btm {
+  color: #999;
+  margin-bottom: 0;
+}
+.mapinfo .gymtype {
+  margin-right: 20px;
+}
+.user-list {
+ width: 35%
+}
+.pointer {
+  cursor: pointer;
+}
+
+.gym-locator .gym-list {
+  z-index: 5;
+}
+.gym-locator.list-open .gym-list-trigger {
+  z-index: 12;
+}
+.add-rating {
+  padding: 15px 0 15px 10px;
+}
+.add-rating .star-container {
+  display: block;
+}
+.add-rating .btn {
+  margin-left: 5px;
+}
+.uploaded-photos li {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px 10px 0;
+  position: relative;
+  float: left;
+}
+.uploaded-photos .img-delete {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 2;
+}
+.fade.in.manage-create-popup {
+  opacity: 0;
+}
+.create-account-close{
+  top: 0;
+  /* right: 40px; */
+  color: #9a9a9a;
+  float: right;
+  font-size: 20px;
+}
+
+.formroww {
+  padding: 22px 50px;
+
+}
+.flag-select .selected--flag--option .country-label{
+color:#555 !important;
+font-size: 14px;
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.flag-select .selected--flag--option .country-label {
+font-size: 15px!important;
+}
+
+.flag-select img {
+position: static!important;
+}
+
+.flag-select.form-control .selected--flag--option {
+padding-left:3px;
+}
+
+.my-control{
+border: 0 !important;
+padding:0px !important;
+}
+
+.flag-select.form-control .selected--flag--option .arrow-down{
+font-size:12px;
+right:6px !important
+}
+
+.containercheck .chcked-sect:checked ~ .green{
+
+  border-color: #3cc89e;
+}
+
+.containercheck .chcked-sect:checked ~ .blue{
+
+  border-color:  #36afba;
+}
+.containercheck .chcked-sect:checked ~ .blue:after{
+
+  border-color: #36afba;
+}
+.containercheck .chcked-sect:checked ~ .green:after{
+
+  border-color: #3cc89e;
+}
+.report-dropdown{
+  /* position: absolute; */
+  margin: 0 10px;
+    top: 100%;
+    right: 0;
+    background-color: red;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 5px 0;
+    /* margin: 0; */
+    width: 30%;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* opacity: 0;
+    z-index: -1;
+    visibility: hidden; */
+    margin-top: 20px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.report-dropdown:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 20px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+}
+.font-clr{
+color:white;
+}
+.pull{
+  float:right !important;
+}
+.set-m{
+  margin:35px  !important;
+}
+.modal-footer{
+  border-top:0px !important;
+}
+.exclamation{
+  font-size: 20px !important;
+  color:#d40505 !important;
+}
+/* 
+.border-owner{
+  bordet
+}
+.border-member{
+
+}
+.border-trainer{
+
+} */
+
+.textarea.form-control.border-member:focus{
+
+ color:  #1772cf !important;
+}
+
+.textarea.form-control.border-trainer:focus{
+   color:#f22c33 !important;
+
+  
+}
+
+.content-verify{
+  width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    /* ../images/temp/registration-bg2.jpg */
+    background: url(../assets/images/temp/registration-bg2.jpg) no-repeat center center/cover;
+    position: relative;
+    overflow: auto;
+}
+
+.green-color{
+  color: #3cc89e;
+}
+
+.blue-color{
+  color: #273282 !important;
+}
+
+.red-color{
+  color: #d40505;
+}
+
+
+.border{
+  border: 10px solid gainsboro;
+  border-radius: 20px !important;
+}
+
+.fa-userr{
+  font-size: 50px !important;
+
+  color: #273282 !important;
+}
+
+.color{
+  color:#979797;
+  font-size: 15px!important;
+}
+
+.blue-bg{
+  background-color: #36afba !important;
+}
+
+.tabb:hover{
+  background-color: #caeaee !important;
+}
+
+.deleteProfile .modal-content{
+  overflow:inherit !important;
+}
+
+.deleteProfile .modal-dialog{
+      width: 430px !important;
+}
+#react-paginate ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#react-paginate li {
+  display: inline-block;
+
+  color: #36afba;
+ 
+  
+}
+#react-paginate  {
+  display: inline-block;
+  }
+
+
+.btn-admin {
+    width: 100px !important;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: normal;
+}
+#admin-header{
+ 
+  color: #36afba !important;
+  background-image: linear-gradient(to bottom, #36afba 0%, #36afba 120%) !important;
+  /* background-image: linear-gradient(to bottom, #fff 0%, #fff 120%) !important; */
+}
+
+.ad-user-profile .no-border {
+  border-left: none;
+}
+.pagination{
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #36afba !important;
+     
+    cursor: default;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+
+.color-white{
+  color:white;
+}
+
+.border-bluee{
+  color: #36afba !important;  
+  border-color: #36afba !important; 
+}
+
+.border-bluee:hover{
+  color: #36afba !important; 
+}
+
+.user-view{
+  cursor:pointer;
+}
+
+.user-view :hover{
+  color: #36afba !important;
+}
+
+.termsbar {
+  margin-top: 15px;
+}
+
+.grey{
+  color:#dedddd !important;
+}
+.review-list {
+  margin-left: 15px;
+}
+
+.review-list-comment {
+  margin-top: 15px;
+}
+/* .padding{
+  padding-left: 200px !important;
+  padding-right: 200px !important;
+} */
